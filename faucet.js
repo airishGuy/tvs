@@ -35,7 +35,7 @@ const main = async () => {
 
             const afterBalance = await provider.getBalance(wallet.address);
             const formattedAfterBalance = ethers.formatEther(afterBalance);
-            console.log("ETH BEFORE: ", formattedAfterBalance);
+            console.log("ETH AFTER: ", formattedAfterBalance);
         }
     } catch (error) {
         console.error("Error sending ETH");
